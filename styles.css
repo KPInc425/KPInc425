@@ -1,0 +1,157 @@
+.bottomButton
+{
+    color: white;
+    border: 1px solid white;
+}
+button
+{
+    padding: 0;
+    margin: 0;
+}
+header
+{
+    background-color: black;
+    text-align: center;
+    margin: none;
+    border: 1px solid white;
+}
+body
+{
+    background-color: black;
+    margin: auto;
+    color: white;
+}
+.light-mode
+{
+    background-color: white;
+    color: black;
+}
+footer
+{
+    position: static;
+    bottom: 0;
+    text-align: center;
+}
+.contact
+{
+    background-color: black;
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+ul.topnav li 
+{
+    float: left;
+}
+  
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+ul.topnav li a:hover:not(.active) 
+{
+    background-color:  blueviolet;
+}
+
+ul.topnav li a.active 
+{
+    background-color:#00cc00;
+}
+.sticky
+{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 2;
+}
+.flex-container
+{
+    display: flex;
+    background-color: black;
+    flex-wrap: no-wrap;
+}
+.flex-container > div
+{
+    background-color:#001a00;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid white;
+    text-align: center;
+    position: relative;
+}
+.visibility
+{
+    visibility: visible;
+
+}
+.glow
+{
+    color: #fff;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    --moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from
+    {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to 
+    {
+        text-shadow: 0 0 20px #fff, 0 0 30px #00ff1e, 0 0 40px #00ff1e, 0 0 50px #00ff1e, 0 0 60px #00ff1e, 0 0 70px #00ff1e, 0 0 80px #00ff1e;
+    }
+}
+#underConstructSB
+{
+    visibility: hidden; 
+    width: 50%; 
+    background-color: white;
+    color: #001a00; 
+    text-align: center; 
+    border-radius: 2px; 
+    padding: 16px;
+    font-size: 21px;
+    left: 25%;
+    position: fixed; 
+    z-index: 2;
+    bottom: 30px;
+}
+#underConstructSB.show
+{
+    visibility: visible; 
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@-webkit-keyframes fadein 
+{
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+ }
+@keyframes fadein 
+{
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+  
+@-webkit-keyframes fadeout 
+{
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+  
+@keyframes fadeout 
+{
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}

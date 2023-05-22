@@ -1,0 +1,28 @@
+@media screen and (max-width: 600px) 
+{ 
+    ul.topnav li 
+    {
+      float: none;
+    }
+    .sticky
+    {
+        position: relative;
+    }
+    .flex-container
+    {
+        flex-wrap: wrap;
+    }
+    .visibility
+    {
+        visibility: hidden;
+        height: 0;
+    }
+    .display-4
+    {
+        font-size: 40px;
+    }
+    .bottomButton
+    {
+        position: relative;
+    }
+}
